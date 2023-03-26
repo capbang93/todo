@@ -23,7 +23,7 @@ import com.example.todo.service.TodoService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-@CrossOrigin(origins = "*")
+//@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("todo")
 public class TodoController {
