@@ -58,7 +58,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.anyRequest()
 				.authenticated()
 			.and()
-			.headers().frameOptions().sameOrigin();
+			.headers().frameOptions().disable();
 
 		http.exceptionHandling()
 		.authenticationEntryPoint((request, response, e)  ->
